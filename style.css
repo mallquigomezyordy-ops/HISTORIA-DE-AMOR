@@ -220,120 +220,125 @@ video{
 
     body{
         padding:10px;
+        overflow-x:hidden;
     }
 
 
     .contenedor{
         width:95%;
-        padding:10px;
-        border-radius:15px;
+        padding:8px;
+        margin:auto;
     }
 
 
     .foto{
         width:100%;
-        height:auto;
+        border-radius:15px;
     }
 
 
-    /* texto encima de la foto */
+
+    /* texto dentro de la foto */
     .mensaje{
-        top:45%;
-        left:35%;
-        font-size:16px;
+        top:35%;
+        left:50%;
+        width:80%;
+        font-size:18px;
+        text-align:center;
     }
 
 
     .mensaje-amor{
-        top:75%;
+        top:65%;
         left:50%;
-        font-size:28px;
+        width:90%;
+        font-size:30px;
+        text-align:center;
     }
 
 
+
+    /* contenido de abajo */
+
     .contenido{
         width:95%;
+        margin:auto;
     }
 
 
     .contenido h3{
 
-        top:180px;
-        left:50%;
-        font-size:28px;
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+
+        margin-top:40px;
+
+        font-size:35px;
 
     }
 
 
+
     h2{
-        font-size:24px;
+
+        font-size:28px;
+        margin-top:30px;
+
     }
 
 
     p{
-        font-size:15px;
-        padding:0 10px;
+
+        font-size:17px;
+        line-height:1.6;
+        padding:0 15px;
+
     }
 
+
+
+    /* botones */
 
     button{
 
-        width:80%;
-        max-width:280px;
-        font-size:16px;
-        padding:12px;
+        width:85%;
+        font-size:18px;
+        padding:15px;
+        margin:10px auto;
 
     }
+
 
 
     video{
 
         width:95%;
-        border-radius:15px;
+        margin-top:20px;
 
     }
 
 
-    /* corazones mas pequeños en celular */
+
+    /* corazones */
+
     .corazones span{
 
-        transform:scale(.7);
+        transform:scale(.6);
 
     }
 
 
-    /* cuadrito final */
+
+    /* cuadro recuerdos */
+
     .cuadrito{
 
-        width:140px;
-        height:140px;
-        margin-top:50px;
+        width:160px;
+        height:160px;
 
-    }
-
-}
-
-
-/* celulares pequeños */
-@media screen and (max-width:380px){
-
-    .mensaje-amor{
-
-        font-size:22px;
-
-    }
-
-
-    .mensaje{
-
-        font-size:14px;
-
-    }
-
-
-    h2{
-
-        font-size:20px;
+        margin:80px auto 30px;
 
     }
 
