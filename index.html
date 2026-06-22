@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Para Mi Amor ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        button{
+            background:#ff1493;
+            color:white;
+            border:2px solid white;
+            border-radius:50px;
+            padding:15px 35px;
+            font-size:20px;
+            font-family:'Georgia', serif;
+            box-shadow:0 0 20px #ff1493;
+            transition:all .4s;
+        }
+
+        button:hover{
+            background:white;
+            color:#ff1493;
+            box-shadow:0 0 30px #ff1493;
+        }
+        button:active{
+            transform:scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CONTENEDOR SOLO PARA LA IMAGEN -->
+    <div class="contenedor">
+        <img src="img/bb4.jpeg" alt="Nuestra Foto" class="foto">
+
+        <div class="mensaje-amor">
+            Te Amo fresita❤️
+        </div>
+        <div class="mensaje">
+            mi vida tomo
+            <br>
+            color desde
+            <br>
+            que te conoci❤️
+        </div>
+    </div>
+    
+    <!-- TEXTO FUERA DEL CONTENEDOR -->
+    <div class="contenido">
+        <h3>23/03/2026</h3>
+        <br><br>
+        <br><br>
+        <h2>Para Ti ❤️</h2>
+
+        <p>
+            Gracias por estar en mi vida. Cada momento contigo es especial
+            y cada día te amo más. ❤️
+        </p>
+        <br><br>
+        <br><br>
+        <button onclick="document.getElementById('audio').play()">
+            ▶ click aqui
+            </button>
+            <br>
+            <button onclick="document.getElementById('audio').pause()">
+            ⏹ detener
+            </button>
+            <audio id="audio" loop>
+                <source src="music/bb.mpeg" type="audio/mp3">
+            </audio>
+
+        <video controls>
+            <source src="video/recuerdo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="corazones">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+        <span>💗</span>
+        <span>💝</span>
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+    </div>
+    <!--cuadro para imagen de pochacco-->
+    <br><br><br>
+    <br>
+    <div class="cuadrito">
+        <a href="recuerdos.html" class="cuadrito">
+            <img src="img/PAREJA.png" alt="Pochacco">
+        </a>
+    </div>
+</body>
+</html>
