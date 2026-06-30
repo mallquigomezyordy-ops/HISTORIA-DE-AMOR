@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:linear-gradient(#ffe6ef,#fff5fa);
+
+    font-family:'Poppins',sans-serif;
+
+    padding:20px;
+
+}
+
+
+/* TITULO PRINCIPAL */
+
+h1{
+
+    text-align:center;
+
+    color:#ff1493;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 10px #ff1493;
+
+}
+
+
+
+/* GALERIA */
+
+.galeria{
+
+    width:90%;
+
+    max-width:450px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+}
+
+
+
+/* TARJETA DE CADA RECUERDO */
+
+.tarjeta{
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 15px rgba(255,20,147,.25);
+
+    text-align:center;
+
+}
+
+
+
+/* TITULO DE LA FOTO */
+
+.tarjeta h2{
+
+    color:#ff1493;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* IMAGEN DENTRO DE LA TARJETA */
+
+.tarjeta img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* EFECTO AL PASAR */
+
+.tarjeta:hover{
+
+    transform:scale(1.03);
+
+    transition:.4s;
+
+}
+
+
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+
+    body{
+
+        padding:12px;
+
+    }
+
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+
+    .galeria{
+
+        width:100%;
+
+    }
+
+
+    .tarjeta{
+
+        padding:12px;
+
+        border-radius:20px;
+
+    }
+
+
+    .tarjeta h2{
+
+        font-size:22px;
+
+    }
+
+
+    .tarjeta img{
+
+        border-radius:15px;
+
+    }
+
+}

@@ -2,6 +2,34 @@
     margin:0;
     padding:0;
 }
+.botones{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+}
+button{
+    background:#ff1493;
+    color:white;
+    border:2px solid white;
+    border-radius:50px;
+    padding:15px 35px;
+    font-size:20px;
+    font-family:'Georgia', serif;
+    box-shadow:0 0 20px #ff1493;
+    transition:all .4s;
+}
+
+button:hover{
+    background:white;
+    color:#ff1493;
+    box-shadow:0 0 30px #ff1493;
+}
+button:active{
+    transform:scale(0.95);
+}
 
 body{
     background: linear-gradient(#ffe6ef, #fff0f5);
@@ -22,6 +50,8 @@ body{
     background:white;
     border-radius:15px;
     box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+    position:relative;
 }
 /* CONTENIDO DE ABAJO */
 .contenido{
@@ -39,21 +69,21 @@ body{
 
 /*mensaje de amor*/
 .mensaje-amor{
-    position:absolute;
-    top:450px;
-    left:52%;
-    transform:translateX(-50%);
-    z-index:10;
+    position:relative;
 
-    color:white;
-    font-size:40px;
+    margin-top:25px;
+
+    color:#ffffff;
+
+    font-size:clamp(30px,6vw,40px);
+
     font-weight:bold;
-    text-shadow:0 0 10px #a81cb3,
-                0 0 20px #b002a1;
 
-    animation:aparecer 10s 1 forwards;
-    animation-delay:4s;
-    opacity:0;
+    text-align:center;
+
+    text-shadow:
+    0 0 10px #a81cb3,
+    0 0 20px #b002a1;
 }
 
 @keyframes aparecer{
@@ -72,30 +102,36 @@ body{
 /*mensaje*/
 .mensaje{
     position:absolute;
-    top:240px;
-    left:38%;
+
+    bottom:20px;
+    left:50%;
+
     transform:translateX(-50%);
-    z-index:9;
+
+    width:85%;
 
     color:white;
-    font-size:20px;
-    font-weight:bold;
-    text-shadow:0 0 10px #ff1493,
-                0 0 20px #ff1493;
 
-    animation:aparecer2 4s ease-out forwards;
+    font-size:clamp(18px,4vw,22px);
+
+    font-weight:bold;
+
+    text-align:center;
+
+
+    text-shadow:
+    0 0 10px #ff1493,
+    0 0 20px #ff1493;
 
 }
 
 @keyframes aparecer2{
     0%{
         opacity:0;
-        transform:translate(-50%, -50px);
     }
 
     100%{
         opacity:1;
-        transform:translate(-50%, 0);
     }
 }
 
@@ -117,16 +153,17 @@ p{
     line-height:1.7;
 }
 
-button{
-    padding:10px 20px;
-    cursor:pointer;
-    margin-bottom:20px;
-}
-
 video{
     width:100%;
+
     max-width:700px;
+
     border-radius:10px;
+
+    display:block;
+
+    margin:20px auto;
+
 }
 /* LOS CORAZONES*/
 .corazones{
@@ -171,21 +208,21 @@ video{
 }
 /*modificamos h3*/
 .contenido h3{
-    position:absolute;
-    top:230px;
-    left:52%;
-    transform:translateX(-50%);
-    z-index:10;
+    position:relative;
 
-    color:white;
+    margin-top:50px;
+
+    color:#f6f6f6;
+
     font-size:40px;
-    font-weight:bold;
-    text-shadow:0 0 10px #a81cb3,
-                0 0 20px #b002a1;
 
-    animation:aparecer 10s 1 forwards;
-    animation-delay:10s;
-    opacity:0;
+    font-weight:bold;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 10px #a81cb3,
+    0 0 20px #b002a1;
 }
 /*cuadrito*/
 .cuadrito{
@@ -240,20 +277,15 @@ video{
 
     /* texto dentro de la foto */
     .mensaje{
-        top:35%;
-        left:50%;
-        width:80%;
-        font-size:18px;
-        text-align:center;
+        bottom:25px;
+
     }
 
 
     .mensaje-amor{
-        top:65%;
-        left:50%;
-        width:90%;
-        font-size:30px;
-        text-align:center;
+        position:relative;
+
+        top:auto;
     }
 
 
@@ -268,14 +300,13 @@ video{
 
     .contenido h3{
 
-        position:relative;
-        top:auto;
-        left:auto;
-        transform:none;
 
         margin-top:40px;
 
-        font-size:35px;
+        font-size:32px;
+
+        text-align:center;
+
 
     }
 
@@ -315,7 +346,10 @@ video{
     video{
 
         width:95%;
-        margin-top:20px;
+
+        margin:20px auto;
+
+        display:block;
 
     }
 
