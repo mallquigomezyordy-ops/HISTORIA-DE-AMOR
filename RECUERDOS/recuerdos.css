@@ -167,3 +167,36 @@ h1{
     }
 
 }
+.volver{
+    display:inline-block;
+
+    margin:20px;
+
+    padding:12px 22px;
+
+    background:#ff1493;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    box-shadow:0 0 12px rgba(255,20,147,.4);
+
+    transition:.3s;
+}
+
+.volver:hover{
+    background:#ff4fa8;
+    transform:scale(1.05);
+}
+body{
+    text-align:center;
+}
+
+.galeria{
+    margin-top:20px;
+}
